@@ -5,6 +5,9 @@
 .Homebg {
   background: linear-gradient(181deg, #fff9f6 0%, #fff3ea 100%);
 }
+.btnColor {
+  background: linear-gradient(42deg, #ef4439 0%, #f4995e 100%);
+}
 
 .btn--color {
   display: flex;
@@ -63,13 +66,13 @@
 .absolute--img--left {
   position: absolute;
   top: 0px;
-  left: -160px;
+  left: -145px;
 }
 
 .absolute--img--right {
   position: absolute;
   top: 0px;
-  right: -170px;
+  right: -160px;
 }
 
 .icon {
@@ -81,4 +84,15 @@
   margin-right: 10px;
   padding: 17px;
   background: #fdefed;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../assets/Arrow.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 20px;
+  cursor: pointer;
 }

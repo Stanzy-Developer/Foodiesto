@@ -1,6 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
+  const date = new Date();
+
   return (
     <div className="">
       {/* Header section */}
@@ -30,46 +33,56 @@ export default function Home() {
               <a href="#contact">Contact</a>
             </li>
           </ul>
-          <div className="mr-[32px] flex gap-[10px] items-center">
-            <img
-              src="../assets/Profile.svg"
-              alt=""
-              className="cursor-pointer"
-            />
-            <p className=" border-[#DC810B] border-b-[2px]  p-[2px] cursor-pointer text-[#655D5D]">
-              Sign In
-            </p>
-          </div>
-          <button className="btn">
-            <p className="z-20"> Get Started</p>
-          </button>
+          <Link to={"Registration/sign-in"} relative="path">
+            <div className="mr-[32px] flex gap-[10px] items-center">
+              <img
+                src="../assets/Profile.svg"
+                alt=""
+                className="cursor-pointer"
+              />
+              <p className=" border-[#DC810B] border-b-[2px]  p-[2px] cursor-pointer text-[#655D5D]">
+                Sign In
+              </p>
+            </div>
+          </Link>
+          <Link to={"Registration"}>
+            <button className="btn">
+              {" "}
+              <p className="z-20"> Get Started</p>
+            </button>
+          </Link>
         </nav>
 
         {/* Hero-section */}
 
-        <section className="pt-[90] pb-[140px] pl-[161px] flex justify-between items-center">
+        <section
+          className="pt-[90] pb-[140px] pl-[161px] flex justify-between items-center"
+          id="home"
+        >
           <div>
             <h1 className="text-[54px] text-[#2C2C2C] font-bold">
               Your restaurant menu under a QR code.{" "}
             </h1>
-            <p className="text-[24px] text-[#363636]">
-              Stop sending huge PDFs menu to your customers. They are hard to
-              navigate
-            </p>
-            <span>
+            <div className="flex items-center">
+              <p className="text-[24px] text-[#363636] w-[419px]">
+                Stop sending huge PDFs menu to your customers. They are hard to
+                navigate
+              </p>
               <img src="../assets/Scan.svg" alt="" />
-            </span>
+            </div>
             <div className="flex items-center gap-[32px] mt-[79px]">
-              <button class="btn--color">
-                Get started <img src="../assets/Frame.svg" alt="gtrdf" />
-              </button>
+              <Link to={"Registration"}>
+                <button class="btn--color">
+                  Get started <img src="../assets/Frame.svg" alt="" />
+                </button>
+              </Link>
               <button class="btn">
                 <p className="z-20">Features</p>{" "}
-                <img src="../assets/Paper.svg" alt="hggvf" className="z-20" />
+                <img src="../assets/Paper.svg" alt="" className="z-20" />
               </button>
             </div>
           </div>
-          <img src="../assets/1.png" alt="" />
+          <img src="../assets/1.png" alt="" className="w-[740px] h-[500px]" />
         </section>
       </header>
 
@@ -117,9 +130,11 @@ export default function Home() {
               <p>Best price</p>
             </div>
           </div>
-          <button class="btn--color">
-            Get started <img src="../../assets/Frame.svg" alt="" />
-          </button>
+          <Link to={"Registration"}>
+            <button class="btn--color">
+              Get started <img src="../assets/Frame.svg" alt="" />
+            </button>
+          </Link>
           <img src="../../assets/Grid.svg" alt="" class="absolute--img--left" />
         </div>
         <div>
@@ -128,11 +143,8 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section
-        class="bg-[#FCFCFC] pl-[159px] pt-[140px] pb-[131px] relative"
-        id="feature"
-      >
-        <div className="relative">
+      <section class="bg-[#FCFCFC] pl-[159px] pt-[140px] pb-[141px] relative">
+        <div className="relative" id="feature">
           <h2 class="text-[#2C2C2C] text-[38px] font-[700] ">
             Foodiesto Features
           </h2>
@@ -206,10 +218,12 @@ export default function Home() {
             <span className="font-bold">Foodiesto.</span>
           </p>
           <div class="flex justify-left items-center gap-[42px]">
-            <button class="btn--color">
-              Start now
-              <img src="../../assets/Frame.svg" alt="" />
-            </button>
+            <Link to={"Registration"}>
+              <button class="btn--color">
+                Start Now
+                <img src="../assets/Frame.svg" alt="" />
+              </button>
+            </Link>
             <div class="flex justify-center items-center">
               <div class="icon rounded-full">
                 <img src="../../assets/Scan-color.png" alt="" />
@@ -242,9 +256,12 @@ export default function Home() {
             user-friendly. Give your customers the experience they deserve with
             a very low cost service.
           </p>
-          <button class="mt-[67px] btn--color ">
-            Start now <img src="../../assets/Frame.svg" alt="" />
-          </button>
+          <Link to={"Registration"}>
+            <button class="btn--color mt-[67px]">
+              Start Now
+              <img src="../assets/Frame.svg" alt="" />
+            </button>
+          </Link>
           <img
             src="../../assets/Grid.svg"
             alt=""
@@ -258,27 +275,30 @@ export default function Home() {
           <h2 class="text-[#2C2C2C] text-[38px] font-bold mb-[43px]">
             Why is Foodiesto good for your restaurant ?
           </h2>
-          <p class=" text-[#363636] text-[20px] mb-[94px] ">
+          <p class=" text-[#363636] text-[20px] mb-[94px] w-[517px]">
             Are you managing a big, small or medium restaurant, Foodiesto is
             capable of handling your menu. Picture menu are more converting that
-            just a simple text. Go green ! no printing of colourful and costly
+            just a simple text. Go green ! no printing of colorful and costly
             menu books. Just a simple scan of your restaurant’s QR code at and
             you are good to go.
           </p>
-          <button class="btn--color">
-            Start now <img src="../../assets/Frame.svg" alt="" />
-          </button>
+          <Link to={"Registration"}>
+            <button class="btn--color">
+              Start Now
+              <img src="../assets/Frame.svg" alt="" />
+            </button>
+          </Link>
           <img src="../../assets/Grid.svg" alt="" class="absolute--img--left" />
         </div>
         <img class="w-[832px] h-[623px]" src="../../assets/5.png" alt="" />
       </section>
-      <section class="flex justify-center items-center Homebg">
-        <img src="../../assets/6.png" alt="" class="w-[893px] h-[830px]" />
+      <section class="flex justify-center items-center Homebg  pr-[159px] pt-[52px] pb-[-20px]">
+        <img src="../../assets/6.png" alt="" class="w-[893px] h-[840px]" />
         <div class="relative w-[550px]">
           <h2 class="text-[38px] text-[] font-bold #2C2C2C">
             Create & manage <br /> your menu items
           </h2>
-          <p class="text-[#363636] text-[20px] mb-[65px] mt-[43px]  ">
+          <p class="text-[#363636] text-[20px] mb-[64px] mt-[43px]  w-[544px]">
             Imagine you have some new dishes you would like to add to your menu
             list, or for some reasons you wish to change the price or
             description of your menu. That will be a difficult task to
@@ -287,9 +307,12 @@ export default function Home() {
             covered. Manage your restaurant’s menu from our user-friendly
             backend.
           </p>
-          <button class="mt-[67px] btn--color">
-            Start now <img src="../../assets/Frame.svg" alt="" />
-          </button>
+          <Link to={"Registration"}>
+            <button class="btn--color mt-[67px]">
+              Start Now
+              <img src="../assets/Frame.svg" alt="" />
+            </button>
+          </Link>
           <img
             src="../../assets/Grid.svg"
             alt=""
@@ -297,6 +320,424 @@ export default function Home() {
           />
         </div>
       </section>
+
+      {/* Pricing Section */}
+      <section className=" pt-[140px] pb-[141px] relative text-center">
+        <h2 className="text-[#2C2C2C] text-[38px] font-bold" id="pricing">
+          Choose your plan and get started
+        </h2>
+        <p className="text-[#2C2C2C] text-[1.25rem] mb-[59px]">
+          We give affordable and flexible options.
+          <span className="text-[#D00000] text-[1.25rem] font-bold ml-[20px]">
+            Offers expire in : 29 days
+          </span>
+        </p>
+        <img
+          src="../assets/Grid.svg"
+          alt=""
+          className="absolute top-[120px] right-0"
+        />
+        <div className="flex items-center justify-center gap-[32px]">
+          {/* Monthly Plan Card */}
+          <div className="w-[352px] h-[392px] rounded-[32px] bg-[#FFF] shadow-xl p-[49px] text-left mt-[90px]">
+            <h3 className="text-[#363636] text-[1.25rem] font-bold">
+              Monthly Plan
+            </h3>
+            <p className="text-[#363636] text-[2.1875rem] font-bold">
+              $15{" "}
+              <span className="relative text-[rgba(52,52,52,.30)] text-[1.125rem] font-bold">
+                <img
+                  src="../assets/Line.png
+                "
+                  alt=""
+                  className="absolute top-[30%] left-0 z-10 opacity-[100%]"
+                />
+                $29.98
+              </span>
+            </p>
+            <ul className="mt-[34px]">
+              <li className="text-[#363636] text-[0.875rem] flex items-center gap-[15px] mb-[14px]">
+                <img
+                  src="../assets/tick.png"
+                  alt=""
+                  className="w-[24px] h-[24px]"
+                />
+                Full dashboard access
+              </li>
+              <li className="text-[#363636] text-[0.875rem] flex items-center gap-[15px] mb-[14px]">
+                <img
+                  src="../assets/tick.png"
+                  alt=""
+                  className="w-[24px] h-[24px]"
+                />
+                Manage WhatsApp orders{" "}
+                <span className="p-[6.5px] rounded-[30px] text-[0.625rem] bg-[#6DAD05] ml-[-5px]">
+                  NEW
+                </span>
+              </li>
+              <li className="text-[#363636] text-[0.875rem] flex items-center gap-[15px] mb-[14px]">
+                <img
+                  src="../assets/tick.png"
+                  alt=""
+                  className="w-[24px] h-[24px]"
+                />
+                Unlimited meals creation
+              </li>
+              <li className="text-[#363636] text-[0.875rem] flex items-center gap-[15px] mb-[14px]">
+                <img
+                  src="../assets/tick.png"
+                  alt=""
+                  className="w-[24px] h-[24px]"
+                />
+                QR Code + URL
+              </li>
+              <li className="text-[#363636] text-[0.875rem] flex items-center gap-[15px] mb-[14px]">
+                <img
+                  src="../assets/tick.png"
+                  alt=""
+                  className="w-[24px] h-[24px]"
+                />
+                Free support{" "}
+              </li>
+            </ul>
+          </div>
+
+          {/* Yearly Plan Card */}
+          <div className="w-[352px] h-[480px] rounded-[32px] bg-[#FFF] shadow-2xl p-[49px] text-left mt-[59px]">
+            <h3 className="text-[#363636] text-[1.25rem] font-bold">
+              Yearly Plan
+            </h3>
+            <p className="text-[#363636] text-[2.1875rem] font-bold">
+              $35{" "}
+              <span className="relative text-[rgba(52,52,52,.30)] text-[1.125rem] font-bold">
+                <img
+                  src="../assets/Line.png
+                "
+                  alt=""
+                  className="absolute top-[30%] left-0 z-10 opacity-[100%]"
+                />
+                $99.98
+              </span>
+            </p>
+            <ul className="mt-[34px] mb-[37px]">
+              <li className="text-[#363636] text-[0.875rem] flex items-center gap-[15px] mb-[14px]">
+                <img
+                  src="../assets/tick.png"
+                  alt=""
+                  className="w-[24px] h-[24px]"
+                />
+                Full dashboard access
+              </li>
+              <li className="text-[#363636] text-[0.875rem] flex items-center gap-[15px] mb-[14px]">
+                <img
+                  src="../assets/tick.png"
+                  alt=""
+                  className="w-[24px] h-[24px]"
+                />
+                Manage WhatsApp orders{" "}
+                <span className="p-[6.5px] rounded-[30px] text-[0.625rem] bg-[#6DAD05] ml-[-5px]">
+                  NEW
+                </span>
+              </li>
+              <li className="text-[#363636] text-[0.875rem] flex items-center gap-[15px] mb-[14px]">
+                <img
+                  src="../assets/tick.png"
+                  alt=""
+                  className="w-[24px] h-[24px]"
+                />
+                Unlimited meals creation
+              </li>
+              <li className="text-[#363636] text-[0.875rem] flex items-center gap-[15px] mb-[14px]">
+                <img
+                  src="../assets/tick.png"
+                  alt=""
+                  className="w-[24px] h-[24px]"
+                />
+                QR Code + URL
+              </li>
+              <li className="text-[#363636] text-[0.875rem] flex items-center gap-[15px] mb-[14px]">
+                <img
+                  src="../assets/tick.png"
+                  alt=""
+                  className="w-[24px] h-[24px]"
+                />
+                Free support{" "}
+              </li>
+            </ul>
+            <button className="w-[268px] h-[61px] rounded-[12px] text-center text-white text-[1rem] font-bold btnColor">
+              Choose plan
+            </button>
+          </div>
+          {/* Lifetime Plan Card */}
+          <div className="w-[352px] h-[392px] rounded-[32px] bg-[#FFF] shadow-xl p-[49px] text-left mt-[90px]">
+            <h3 className="text-[#363636] text-[1.25rem] font-bold">
+              Lifetime
+            </h3>
+            <p className="text-[#363636] text-[2.1875rem] font-bold">
+              $200{" "}
+              <span className="relative text-[rgba(52,52,52,.30)] text-[1.125rem] font-bold">
+                <img
+                  src="../assets/Line.png
+                "
+                  alt=""
+                  className="absolute top-[30%] left-0 z-10 opacity-[100%]"
+                />
+                $349.98
+              </span>
+            </p>
+            <ul className="mt-[34px]">
+              <li className="text-[#363636] text-[0.875rem] flex items-center gap-[15px] mb-[14px]">
+                <img
+                  src="../assets/tick.png"
+                  alt=""
+                  className="w-[24px] h-[24px]"
+                />
+                Full dashboard access
+              </li>
+              <li className="text-[#363636] text-[0.875rem] flex items-center gap-[15px] mb-[14px]">
+                <img
+                  src="../assets/tick.png"
+                  alt=""
+                  className="w-[24px] h-[24px]"
+                />
+                Manage WhatsApp orders{" "}
+                <span className="p-[6.5px] rounded-[30px] text-[0.625rem] bg-[#8F2692] ml-[-5px] text-white">
+                  NEW
+                </span>
+              </li>
+              <li className="text-[#363636] text-[0.875rem] flex items-center gap-[15px] mb-[14px]">
+                <img
+                  src="../assets/tick.png"
+                  alt=""
+                  className="w-[24px] h-[24px]"
+                />
+                Unlimited meals creation
+              </li>
+              <li className="text-[#363636] text-[0.875rem] flex items-center gap-[15px] mb-[14px]">
+                <img
+                  src="../assets/tick.png"
+                  alt=""
+                  className="w-[24px] h-[24px]"
+                />
+                QR Code + URL
+              </li>
+              <li className="text-[#363636] text-[0.875rem] flex items-center gap-[15px] mb-[14px]">
+                <img
+                  src="../assets/tick.png"
+                  alt=""
+                  className="w-[24px] h-[24px]"
+                />
+                Free support{" "}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section
+        className="px-[161px] pt-[70px] pb-[140px] relative flex items-center justify-between"
+        id="contact"
+      >
+        <div className="max-w-[450px]">
+          <img src="../assets/Grid.svg" alt="" className="mb-[23px]" />
+          <h1 className="text-[#525252] text-[2.8125rem] font-bold mb-[36px]">
+            Any question? Reach out to us.
+          </h1>
+          <p className="text-[#525252] text-[1.25rem] ">
+            We are devoted to provide a quality service to all our customers at
+            a very low price. That’s why we will do our best to respond within
+            1-2 business working days.
+          </p>
+        </div>
+        <form action="">
+          <div className="flex items-center gap-[32px] mb-[25px]">
+            <div className="flex items-center px-[24px] py-[22px] bg-[rgba(217,217,217,0.20)] rounded-[14px] gap-[18px] w-[209px]">
+              <img
+                src="../assets/ProfileNotColor.png"
+                alt=""
+                className="w-[24px] h-[25px]"
+              />
+              <input
+                type="text"
+                placeholder="Your name"
+                className="bg-transparent text-[0.875rem] outline-none text-[#4A5568] w-[119px]"
+              />
+            </div>
+
+            <div className="flex items-center px-[24px] py-[22px] bg-[rgba(217,217,217,0.20)] rounded-[14px] gap-[23px] w-[209px]">
+              <img
+                src="../assets/Message.png"
+                alt=""
+                className="w-[24px] h-[25px]"
+              />
+              <input
+                type="text"
+                placeholder="Email"
+                className="bg-transparent text-[0.875rem] outline-none text-[#4A5568] w-[119px]"
+              />
+            </div>
+          </div>
+
+          <div className="flex items-center gap-[32px] mb-[25px]">
+            <div className="flex items-center px-[24px] py-[22px] bg-[rgba(217,217,217,0.20)] rounded-[14px] gap-[18px] w-[209px]">
+              <img
+                src="../assets/Edit.png"
+                alt=""
+                className="w-[24px] h-[25px]"
+              />
+              <select
+                id="country"
+                name="country"
+                className=" bg-transparent text-[0.875rem] outline-none text-[#4A5568] w-[119px]"
+              >
+                <option value="" className="text-[#4A5568]">
+                  Subject
+                </option>
+                <option value="" className="text-[#4A5568]">
+                  Business
+                </option>
+                <option value="" className="text-[#4A5568]">
+                  Request Demo
+                </option>
+                <option value="" className="text-[#4A5568]">
+                  Ask Questions
+                </option>
+              </select>
+            </div>
+
+            <div className="flex items-center px-[24px] py-[22px] bg-[rgba(217,217,217,0.20)] rounded-[14px] gap-[23px] w-[209px]">
+              <img
+                src="../assets/Call.png"
+                alt=""
+                className="w-[24px] h-[25px]"
+              />
+              <input
+                type="text"
+                placeholder="Phone number"
+                className="bg-transparent text-[0.875rem] outline-none text-[#4A5568] w-[119px]"
+              />
+            </div>
+          </div>
+          <div className="mt-[36px]">
+            <textarea
+              name=""
+              id=""
+              className="bg-[rgba(217,217,217,0.20)] w-[451px] h-[183px] p-[28px] resize-none"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+          <button className="w-[210px] h-[66px] rounded-[14px] text-center text-white text-[1rem] font-bold btnColor flex items-center gap-[11px] justify-center mt-[59px]">
+            <p className="font-bold">Sent Message</p>
+            <img
+              src="../assets/Send.png"
+              alt=""
+              className="w-[34px] h-[34px]"
+            />
+          </button>
+        </form>
+        <img
+          src="../assets/Ellipse2.svg"
+          alt=""
+          className="absolute left-0 top-[80px]"
+        />
+      </section>
+
+      {/* Footer */}
+      <footer className=" bg-[#313131]">
+        <div className="flex items-start px-[161px] pt-[74px]">
+          <div className="mr-[45px]">
+            <img src="../assets/LogoLight.svg" alt="" className="mb-[13px]" />
+            <p className="text-white w-[306px]">
+              Get a better digitalized menu for your restaurant. Better display,
+              clean design, suitable for all types of restaurants.
+            </p>
+          </div>
+          <div className="mr-[80px] text-white">
+            <h1 className="text-[1.25rem] font-bold mb-[27px]">
+              Important links
+            </h1>
+            <ul>
+              <li className="mb-[10px]">
+                <a href="#home">Home</a>
+              </li>
+              <li className="mb-[10px]">
+                <a href="#about">About </a>
+              </li>
+              <li className="mb-[10px]">
+                <a href="#feature">Features</a>
+              </li>
+              <li className="mb-[10px]">
+                <a href="#pricing">Pricing</a>
+              </li>
+              <li className="mb-[10px]">
+                <a href="#faq">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div className="text-white">
+            <div>
+              <h1 className="text-[1.25rem] font-bold mb-[18px]">
+                Subscribe to new letters
+              </h1>
+              <div className="flex items-center w-[266px] h-[54px] bg-[rgba(217,217,217,0.20)] rounded-[14px] mb-[37px] p-[17px]">
+                <img
+                  src="../assets/Message2.svg"
+                  alt=""
+                  className="w-[24px] h-[25px] mr-[17px]"
+                />
+                <input
+                  type="text"
+                  placeholder="Your Email"
+                  className="bg-transparent text-[0.875rem] outline-none text-white w-[80px] mr-[30px]"
+                />
+                <button className="w-[81px] h-[32px] rounded-[7px] text-center text-white text-[0.5rem] font-bold btnColor flex items-center gap-[11px] justify-center">
+                  <p className="font-bold">Submit</p>
+                  <img
+                    src="../assets/Send.png"
+                    alt=""
+                    className="w-[16px] h-[16px]"
+                  />
+                </button>
+              </div>
+            </div>
+            <div className="mb-[40px]">
+              <h1 className="text-[1.25rem] font-bold mb-[22px]">
+                Contacts us
+              </h1>
+              <div className="flex items-center mb-[15px]">
+                {" "}
+                <img
+                  src="../assets/Message2.svg"
+                  alt=""
+                  className="w-[20px] h-[20px] mr-[11px]"
+                />{" "}
+                <p className="">support@foodiesto.com</p>
+              </div>
+              <div className="flex items-center">
+                {" "}
+                <img
+                  src="../assets/Call2.svg"
+                  alt=""
+                  className="w-[20px] h-[20px] mr-[11px]"
+                />{" "}
+                <p className="">+44 359 298 9984</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center justify-between px-[161px] py-[18px] border-t-[1px] border-[rgba(255,255,255,0.10)]">
+          <h2 className="text-white">
+            Copyright {date.getFullYear()} | Guide In Dubai All Rights Reserved
+          </h2>
+          <div className="flex items-center">
+            <p className="text-[#C4C4C4] font-bold mr-[51px]">We accept</p>
+            <img src="../assets/Paypal.svg" alt="" className="mr-[19px]" />
+            <img src="../assets/masterCard.svg" alt="" className="mr-[19px]" />
+            <img src="../assets/visa.svg" alt="" className="mr-[19px]" />
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
