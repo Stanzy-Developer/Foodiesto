@@ -11,7 +11,7 @@ export default function Home() {
       {/* Header section */}
       <header className="Homebg">
         <nav className="px-[161px] py-[44px] flex items-center">
-          <Link to=".">
+          <Link to="/">
             <img
               src="../assets/logo.png"
               alt=""
@@ -92,7 +92,7 @@ export default function Home() {
             src={"../assets/1.png"}
             effect="blur"
             alt=""
-            className="w-[740px] h-[500px]"
+            className="w-[840px] h-[500px]"
           />
         </section>
       </header>
@@ -103,7 +103,7 @@ export default function Home() {
         id="about"
       >
         <div className="relative">
-          <h2 className="text-[#2C2C2C] text-[38px] font-bold  ">
+          <h2 className="text-[#2C2C2C] text-[2.375rem] font-bold  ">
             What is foodiesto ?
           </h2>
           <p className="">A Digital menu with QR Code.</p>
@@ -160,7 +160,7 @@ export default function Home() {
       {/* Features Section */}
       <section className="bg-[#FCFCFC] pl-[159px] pt-[140px] pb-[141px] relative">
         <div className="relative" id="feature">
-          <h2 className="text-[#2C2C2C] text-[38px] font-[700] ">
+          <h2 className="text-[#2C2C2C] text-[2.375rem] font-[700] ">
             Foodiesto Features
           </h2>
           <p className="text-[#363636] text-[16px] leading-[33px] mb-[70px] ">
@@ -227,7 +227,7 @@ export default function Home() {
 
       <section className=" pl-[159px] pt-[140px] relative flex mb-[-50px]">
         <div className="w-[550px] relative">
-          <h2 className="text-[#2C2C2C] text-[38px] font-bold mb-[43px]">
+          <h2 className="text-[#2C2C2C] text-[2.375rem] font-bold mb-[43px]">
             Stop using PDF based menu for your customers
           </h2>
           <p className="text-[#363636] text-[20px] mb-[100px]">
@@ -276,11 +276,11 @@ export default function Home() {
           alt=""
         />
         <div className="relative">
-          <h2 className="text-[#2C2C2C] text-[38px] font-bold">
+          <h2 className="text-[#2C2C2C] text-[2.375rem] font-bold">
             Start collecting orders <br />
             via WhatsApp
           </h2>
-          <p className="w-[527px] text-[#363636] text-[20px] mt-[43px]">
+          <p className="w-[545px] text-[#363636] text-[20px] mt-[43px]">
             <span className="font-bold">Foodiesto</span> doesn’t only give your
             access to your menu, but go beyond that. Your customers can both
             view your online menu and send orders directly through WhatsApp if
@@ -304,7 +304,7 @@ export default function Home() {
 
       <section className="flex relative justify-center items-center pl-[159px] pt-[140px] pb-[131px]">
         <div className="relative">
-          <h2 className="text-[#2C2C2C] text-[38px] font-bold mb-[43px]">
+          <h2 className="text-[#2C2C2C] text-[2.375rem] font-bold mb-[43px]">
             Why is Foodiesto good for your restaurant ?
           </h2>
           <p className=" text-[#363636] text-[20px] mb-[94px] w-[517px]">
@@ -341,7 +341,7 @@ export default function Home() {
           className="w-[893px] h-[840px]"
         />
         <div className="relative w-[550px]">
-          <h2 className="text-[38px] text-[] font-bold #2C2C2C">
+          <h2 className="text-[2.375rem] text-[] font-bold #2C2C2C">
             Create & manage <br /> your menu items
           </h2>
           <p className="text-[#363636] text-[20px] mb-[64px] mt-[43px]  w-[544px]">
@@ -366,11 +366,338 @@ export default function Home() {
           />
         </div>
       </section>
-      {/*  */}
+      {/* Review section */}
+      <section
+        className="bg-[rgba(242,242,242,0.20)] pt-[140px] pb-[141px] relative text-center px-[160px] "
+        id="faq"
+      >
+        <div className="relative ">
+          <h2 className="text-[#313131] text-[2.375rem] font-bold w-[400px]">
+            {" "}
+            What customers say about our solution.
+          </h2>
+          <img
+            src="../../assets/Grid.svg"
+            alt=""
+            className="absolute--img--left"
+          />
+        </div>
+        <img
+          src="../../assets/E.png"
+          alt=""
+          className="w-[369px] h-[240px] absolute top-[70px] right-0"
+        />
+        <div className="grid grid-cols-4 gap-[60px] mt-[50px] place-items-center justify-center">
+          <div className="w-[256px] h-[200px] bg-white p-[19px] rounded-[25px]">
+            <div className="flex gap-[]">
+              <img src="../../assets/photo1.svg" alt="" />
+              <div className="text-left ml-[10px]">
+                <h2 className="text-[#000] text-[.75rem] font-bold">
+                  Georgette Pizza
+                </h2>
+                <p className="text-[#525252] text-[.5625rem]">Manager - USA</p>
+                <div className="flex items-center justify-start">
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="relative mt-[27px] p-[19px]">
+              <img
+                src="../../assets/quote1.svg"
+                alt=""
+                className="absolute left-[0px] top-[0px]"
+              />
+              <img
+                src="../../assets/quote2.svg"
+                alt=""
+                className="absolute right-[0px] bottom-[10px]"
+              />
+              <blockquote className="text-[#525252] text-[.6875rem] w-[200px] text-left">
+                Just what i needed for my restaurant.{" "}
+                <span className="font-bold">Foodiesto</span> responded well. I
+                highly recommend{" "}
+              </blockquote>
+            </div>
+          </div>
+
+          {/* Big review */}
+
+          <div className="border border-[#F4925B] w-[296px] h-[220px] bg-white p-[19px] rounded-[25px] shadow-xl">
+            <div className="flex justify-start  p-0">
+              <img
+                src="../../assets/photo2.svg"
+                alt=""
+                className="ml-[-10px]"
+              />
+              <div className="text-left">
+                <h2 className="text-[#000] text-[1rem] font-bold">
+                  Steph’s Corner
+                </h2>
+                <p className="text-[#525252] text-[.75rem]">Founder - UAE</p>
+                <div className="flex items-center justify-start">
+                  <img
+                    src="../../assets/star.svg"
+                    alt=""
+                    width="14px"
+                    height="14px"
+                  />
+                  <img
+                    src="../../assets/star.svg"
+                    alt=""
+                    width="14px"
+                    height="14px"
+                  />
+                  <img
+                    src="../../assets/star.svg"
+                    alt=""
+                    width="14px"
+                    height="14px"
+                  />
+                  <img
+                    src="../../assets/star.svg"
+                    alt=""
+                    width="14px"
+                    height="14px"
+                  />
+                  <img
+                    src="../../assets/star.svg"
+                    alt=""
+                    width="14px"
+                    height="14px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="relative p-[19px]">
+              <img
+                src="../../assets/quote1.svg"
+                alt=""
+                className="absolute left-[0px] top-[0px]"
+              />
+              <img
+                src="../../assets/quote2.svg"
+                alt=""
+                className="absolute right-[0px] bottom-[10px]"
+              />
+              <blockquote className="text-[#525252] text-[.75rem] w-[230px] text-left">
+                Just what i needed for my restaurant.{" "}
+                <span className="font-bold">Foodiesto</span> responded well. I
+                highly recommend{" "}
+              </blockquote>
+            </div>
+          </div>
+
+          <div className="w-[256px] h-[200px] bg-white p-[19px] rounded-[25px] ml-[40px]">
+            <div className="flex gap-[]">
+              <img src="../../assets/photo3.svg" alt="" />
+              <div className="text-left ml-[10px]">
+                <h2 className="text-[#000] text-[.75rem] font-bold">
+                  Manager - Cameroon
+                </h2>
+                <p className="text-[#525252] text-[.5625rem]">
+                  Founder - Bruxells
+                </p>
+                <div className="flex items-center justify-start">
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="relative mt-[27px] p-[19px]">
+              <img
+                src="../../assets/quote1.svg"
+                alt=""
+                className="absolute left-[0px] top-[0px]"
+              />
+              <img
+                src="../../assets/quote2.svg"
+                alt=""
+                className="absolute right-[0px] bottom-[10px]"
+              />
+              <blockquote className="text-[#525252] text-[.6875rem] w-[200px] text-left">
+                Just what i needed for my restaurant.{" "}
+                <span className="font-bold">Foodiesto</span> responded well. I
+                highly recommend{" "}
+              </blockquote>
+            </div>
+          </div>
+
+          <div className="w-[256px] h-[200px] bg-white p-[19px] rounded-[25px] ml-[20px]">
+            <div className="flex gap-[]">
+              <img src="../../assets/photo4.svg" alt="" />
+              <div className="text-left ml-[10px]">
+                <h2 className="text-[#000] text-[.75rem] font-bold">
+                  Chantal Chicken
+                </h2>
+                <p className="text-[#525252] text-[.5625rem]">
+                  Manager - Cameroon
+                </p>
+                <div className="flex items-center justify-start">
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="relative mt-[27px] p-[19px]">
+              <img
+                src="../../assets/quote1.svg"
+                alt=""
+                className="absolute left-[0px] top-[0px]"
+              />
+              <img
+                src="../../assets/quote2.svg"
+                alt=""
+                className="absolute right-[0px] bottom-[10px]"
+              />
+              <blockquote className="text-[#525252] text-[.6875rem] w-[200px] text-left">
+                Just what i needed for my restaurant.{" "}
+                <span className="font-bold">Foodiesto</span> responded well. I
+                highly recommend{" "}
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-center mt-[30px]">
+          <div className="w-[280px] h-[200px] bg-white p-[19px] rounded-[25px] ml-[20px]">
+            <div className="flex gap-[]">
+              <img src="../../assets/photo5.svg" alt="" />
+              <div className="text-left ml-[10px]">
+                <h2 className="text-[#000] text-[.75rem] font-bold">
+                  Maddy foods
+                </h2>
+                <p className="text-[#525252] text-[.5625rem]">
+                  Manager & Founder - CM
+                </p>
+                <div className="flex items-center justify-start">
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="relative mt-[27px] p-[19px]">
+              <img
+                src="../../assets/quote1.svg"
+                alt=""
+                className="absolute left-[0px] top-[0px]"
+              />
+              <img
+                src="../../assets/quote2.svg"
+                alt=""
+                className="absolute right-[0px] bottom-[10px]"
+              />
+              <blockquote className="text-[#525252] text-[.6875rem] w-[200px] text-left">
+                Just what i needed for my restaurant.{" "}
+                <span className="font-bold">Foodiesto</span> responded well. I
+                highly recommend{" "}
+              </blockquote>
+            </div>
+          </div>
+
+          <div className="w-[280px] h-[200px] bg-white p-[19px] rounded-[25px] ml-[20px]">
+            <div className="flex gap-[]">
+              <img src="../../assets/photo6.svg" alt="" />
+              <div className="text-left ml-[10px]">
+                <h2 className="text-[#000] text-[.75rem] font-bold">
+                  Boris cafe
+                </h2>
+                <p className="text-[#525252] text-[.5625rem]">
+                  Co-founder - Canada
+                </p>
+                <div className="flex items-center justify-start">
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="relative mt-[27px] p-[19px]">
+              <img
+                src="../../assets/quote1.svg"
+                alt=""
+                className="absolute left-[0px] top-[0px]"
+              />
+              <img
+                src="../../assets/quote2.svg"
+                alt=""
+                className="absolute right-[0px] bottom-[10px]"
+              />
+              <blockquote className="text-[#525252] text-[.6875rem] w-[200px] text-left">
+                Just what i needed for my restaurant.{" "}
+                <span className="font-bold">Foodiesto</span> responded well. I
+                highly recommend{" "}
+              </blockquote>
+            </div>
+          </div>
+
+          <div className="w-[280px] h-[200px] bg-white p-[19px] rounded-[25px] ml-[20px]">
+            <div className="flex gap-[]">
+              <img src="../../assets/photo7.svg" alt="" />
+              <div className="text-left ml-[10px]">
+                <h2 className="text-[#000] text-[.75rem] font-bold">
+                  Orphee Breakfast
+                </h2>
+                <p className="text-[#525252] text-[.5625rem]">
+                  Founder - Ghana
+                </p>
+                <div className="flex items-center justify-start">
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="relative mt-[27px] p-[19px]">
+              <img
+                src="../../assets/quote1.svg"
+                alt=""
+                className="absolute left-[0px] top-[0px]"
+              />
+              <img
+                src="../../assets/quote2.svg"
+                alt=""
+                className="absolute right-[0px] bottom-[10px]"
+              />
+              <blockquote className="text-[#525252] text-[.6875rem] w-[200px] text-left">
+                Just what i needed for my restaurant.{" "}
+                <span className="font-bold">Foodiesto</span> responded well. I
+                highly recommend{" "}
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <img
+          src="../../assets/circle.svg"
+          alt=""
+          className="absolute top-[153px] right-0 -z-10"
+        />
+        <img
+          src="../../assets/A.svg"
+          alt=""
+          className="absolute bottom-0 left-0"
+        />
+      </section>
 
       {/* Pricing Section */}
       <section className=" pt-[140px] pb-[141px] relative text-center">
-        <h2 className="text-[#2C2C2C] text-[38px] font-bold" id="pricing">
+        <h2 className="text-[#2C2C2C] text-[2.375rem] font-bold" id="pricing">
           Choose your plan and get started
         </h2>
         <p className="text-[#2C2C2C] text-[1.25rem] mb-[59px]">
@@ -586,9 +913,9 @@ export default function Home() {
         className="px-[161px] pt-[70px] pb-[140px] relative flex items-center justify-between"
         id="contact"
       >
-        <div className="max-w-[450px]">
+        <div className="max-w-[470px]">
           <img src="../assets/Grid.svg" alt="" className="mb-[23px]" />
-          <h1 className="text-[#525252] text-[2.8125rem] font-bold mb-[36px]">
+          <h1 className="text-[#525252] text-[2.8125rem] font-bold mb-[36px] w-[360px]">
             Any question? Reach out to us.
           </h1>
           <p className="text-[#525252] text-[1.25rem] ">
@@ -670,7 +997,7 @@ export default function Home() {
             <textarea
               name=""
               id=""
-              className="bg-[rgba(217,217,217,0.20)] w-[451px] h-[183px] p-[28px] resize-none"
+              className="bg-[rgba(217,217,217,0.20)] w-[451px] h-[183px] p-[28px] resize-none rounded-[14px]"
               placeholder="Your message"
             ></textarea>
           </div>

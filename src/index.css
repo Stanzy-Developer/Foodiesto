@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
 .Homebg {
   background: linear-gradient(181deg, #fff9f6 0%, #fff3ea 100%);
 }

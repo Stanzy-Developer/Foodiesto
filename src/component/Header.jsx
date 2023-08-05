@@ -1,17 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <div className="">
       {/* Header section */}
       <nav className="px-[161px] py-[44px]  flex items-center">
-        <img
-          src="../assets/logo.png"
-          alt=""
-          width={"105px"}
-          height="55px"
-          className="mr-[240px]"
-        />
+        <Link to="/">
+          <img
+            src="../assets/logo.png"
+            alt=""
+            width={"105px"}
+            height="55px"
+            loading="lazy"
+            className="mr-[240px]"
+          />
+        </Link>
         <ul className="flex gap-[30px] mr-[86px]">
           <li className="text-[#2C2C2C] relative  py-[4px] hover:font-bold before:contents-[''] before:absolute before:bottom-0 before:left-0 before:rounded-md before:w-0 before:h-[2px] before:bg-[#DC810B] hover:before:w-full hover:before:transition-all hover:before:duration-1000 hover:before:ease-in-out">
             <a href="#about">About</a>
