@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function Home() {
   const date = new Date();
@@ -88,9 +86,9 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <LazyLoadImage
+          <img
             src={"../assets/1.png"}
-            effect="blur"
+            loading="lazy"
             alt=""
             className="w-[840px] h-[500px]"
           />
@@ -123,20 +121,24 @@ export default function Home() {
           <div className="flex items-center gap-[32px] mb-[92px] mt-[33px]">
             <div className="flex justify-center items-center gap-[13.12px]">
               <div className="p-[13px] bg-[#FDEFED] rounded-full">
-                <img src="../../assets/clean-design.svg" alt="" />
+                <img
+                  src="../../assets/clean-design.svg"
+                  alt=""
+                  loading="lazy"
+                />
               </div>
               <p>Clean design</p>
             </div>
 
             <div className="flex justify-center items-center gap-[13.12px]">
               <div className="p-[13px] bg-[#FDEFED] rounded-full">
-                <img src="../../assets/username.svg" alt="" />
+                <img src="../../assets/username.svg" alt="" loading="lazy" />
               </div>
               <p>User friendly</p>
             </div>
             <div className="flex justify-center items-center gap-[13.12px]">
               <div className="p-[13px] bg-[#FDEFED] rounded-full">
-                <img src="../../assets/best-price.svg" alt="" />
+                <img src="../../assets/best-price.svg" alt="" loading="lazy" />
               </div>
               <p>Best price</p>
             </div>
@@ -150,10 +152,11 @@ export default function Home() {
             src="../../assets/Grid.svg"
             alt=""
             className="absolute--img--left"
+            loading="lazy"
           />
         </div>
         <div>
-          <LazyLoadImage src="../../assets/2.png" effect="blur" alt="" />
+          <img src="../../assets/2.png" loading="lazy" alt="" />
         </div>
       </section>
 
@@ -169,11 +172,12 @@ export default function Home() {
           <img
             src="../../assets/Grid.svg"
             alt=""
+            loading="lazy"
             className="absolute--img--left"
           />
         </div>
         <div className="flex gap-[34px] items-center">
-          <div className=" bg-white shadow-xl rounded-[45px] pt-[47px] pb-[79px] pl-[51px] pr-[60px] w-[351px]">
+          <div className=" bg-white shadow-xl rounded-[45px] pt-[47px] pb-[79px] pl-[51px] pr-[60px] w-[351px] h-[420px]">
             <img className="mb-[31px]" src="../../assets/machine.svg" alt="" />
             <h2 className=" text-[24px] text-[#2C2C2C] font-bold mb-[16px]  w-[245px]">
               Provides a backend to manage your menu
@@ -184,8 +188,13 @@ export default function Home() {
               it can be challenging and due to its loaded...
             </p>
           </div>
-          <div className=" bg-white shadow-2xl rounded-[45px] pt-[66px] pb-[66px] pl-[51px] pr-[83px] relative w-[351px]">
-            <img className="mb-[31px]" src="../../assets/sapp.svg" alt="" />
+          <div className=" bg-white shadow-2xl rounded-[45px] pt-[66px] pb-[66px] pl-[51px] pr-[83px] relative w-[351px] h-[500px]">
+            <img
+              className="mb-[31px]"
+              src="../../assets/sapp.svg"
+              alt=""
+              loading="lazy"
+            />
             <h2 className=" text-[24px] text-[#2C2C2C] font-bold mb-[16px]  ">
               WhatsApp orders collect
             </h2>
@@ -201,6 +210,7 @@ export default function Home() {
                 className="cursor-pointer"
                 src="../../assets/play.svg"
                 alt=""
+                loading="lazy"
               />
             </div>
 
@@ -208,9 +218,10 @@ export default function Home() {
               className="absolute right-0 top-[47px]"
               src="../../assets/Vector.png"
               alt=""
+              loading="lazy"
             />
           </div>
-          <div className=" bg-white shadow-xl rounded-[45px] pt-[47px] pb-[97px] pl-[51px] pr-[60px]  w-[351px] ">
+          <div className=" bg-white shadow-xl rounded-[45px] pt-[47px] pb-[97px] pl-[51px] pr-[60px]  w-[351px] h-[420px] ">
             <img className="mb-[31px]" src="../../assets/cofee.svg" alt="" />
             <h2 className=" text-[24px] text-[#2C2C2C] font-bold mb-[31px]  ">
               Create unlimited
@@ -244,16 +255,16 @@ export default function Home() {
             <Link to={"Registration"}>
               <button className="btn--color">
                 Start Now
-                <img src="../assets/Frame.svg" alt="" />
+                <img src="../assets/Frame.svg" alt="" loading="lazy" />
               </button>
             </Link>
             <div className="flex justify-center items-center">
               <div className="icon rounded-full">
-                <img src="../../assets/Scan-color.png" alt="" />
+                <img src="../../assets/Scan-color.png" alt="" loading="lazy" />
               </div>
-              <img src="../../assets/plus.svg" alt="" />
+              <img src="../../assets/plus.svg" alt="" loading="lazy" />
               <div className="icon rounded-full">
-                <img src="../../assets/link.svg" alt="" />
+                <img src="../../assets/link.svg" alt="" loading="lazy" />
               </div>
             </div>
           </div>
@@ -264,16 +275,18 @@ export default function Home() {
           />
         </div>
         <div className="flex-1">
-          <LazyLoadImage src="../../assets/3.png" effect="blur" alt="" />
+          <img src="../../assets/3.png" loading="lazy" alt="" />
         </div>
       </section>
 
       <section className="flex relative justify-center items-center pr-[150px] pt-[140px] pb-[131px]">
-        <LazyLoadImage
+        <img
           /*  className="w-[50%] h-[570px]" */
           src="../../assets/4.png"
-          effect="blur"
+          loading="lazy"
           alt=""
+          width="800px"
+          height="600px"
         />
         <div className="relative">
           <h2 className="text-[#2C2C2C] text-[2.375rem] font-bold">
@@ -297,11 +310,11 @@ export default function Home() {
           <img
             src="../../assets/Grid.svg"
             alt=""
-            className="absolute--img--right"
+            className="absolute right-[-115px] top-0"
+            loading="lazy"
           />
         </div>
       </section>
-
       <section className="flex relative justify-center items-center pl-[159px] pt-[140px] pb-[131px]">
         <div className="relative">
           <h2 className="text-[#2C2C2C] text-[2.375rem] font-bold mb-[43px]">
@@ -317,27 +330,28 @@ export default function Home() {
           <Link to={"Registration"}>
             <button className="btn--color">
               Start Now
-              <img src="../assets/Frame.svg" alt="" />
+              <img src="../assets/Frame.svg" alt="" loading="lazy" />
             </button>
           </Link>
           <img
             src="../../assets/Grid.svg"
             alt=""
             className="absolute--img--left"
+            loading="lazy"
           />
         </div>
-        <LazyLoadImage
+        <img
           className="w-[832px] h-[623px]"
           src="../../assets/5.png"
-          effect="blur"
+          loading="lazy"
           alt=""
         />
       </section>
       <section className="flex justify-center items-center Homebg  pr-[159px] pt-[52px] pb-[-20px]">
-        <LazyLoadImage
+        <img
           src="../../assets/6.png"
           alt=""
-          effect="blur"
+          loading="lazy"
           className="w-[893px] h-[840px]"
         />
         <div className="relative w-[550px]">
@@ -356,13 +370,14 @@ export default function Home() {
           <Link to={"Registration"}>
             <button className="btn--color mt-[67px]">
               Start Now
-              <img src="../assets/Frame.svg" alt="" />
+              <img src="../assets/Frame.svg" alt="" loading="lazy" />
             </button>
           </Link>
           <img
             src="../../assets/Grid.svg"
             alt=""
             className="absolute--img--right"
+            loading="lazy"
           />
         </div>
       </section>
@@ -380,28 +395,30 @@ export default function Home() {
             src="../../assets/Grid.svg"
             alt=""
             className="absolute--img--left"
+            loading="lazy"
           />
         </div>
         <img
           src="../../assets/E.png"
           alt=""
           className="w-[369px] h-[240px] absolute top-[70px] right-0"
+          loading="lazy"
         />
         <div className="grid grid-cols-4 gap-[60px] mt-[50px] place-items-center justify-center">
           <div className="w-[256px] h-[200px] bg-white p-[19px] rounded-[25px]">
             <div className="flex gap-[]">
-              <img src="../../assets/photo1.svg" alt="" />
+              <img src="../../assets/photo1.svg" alt="" loading="lazy" />
               <div className="text-left ml-[10px]">
                 <h2 className="text-[#000] text-[.75rem] font-bold">
                   Georgette Pizza
                 </h2>
                 <p className="text-[#525252] text-[.5625rem]">Manager - USA</p>
                 <div className="flex items-center justify-start">
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -409,11 +426,13 @@ export default function Home() {
               <img
                 src="../../assets/quote1.svg"
                 alt=""
+                loading="lazy"
                 className="absolute left-[0px] top-[0px]"
               />
               <img
                 src="../../assets/quote2.svg"
                 alt=""
+                loading="lazy"
                 className="absolute right-[0px] bottom-[10px]"
               />
               <blockquote className="text-[#525252] text-[.6875rem] w-[200px] text-left">
@@ -432,6 +451,7 @@ export default function Home() {
                 src="../../assets/photo2.svg"
                 alt=""
                 className="ml-[-10px]"
+                loading="lazy"
               />
               <div className="text-left">
                 <h2 className="text-[#000] text-[1rem] font-bold">
@@ -450,24 +470,28 @@ export default function Home() {
                     alt=""
                     width="14px"
                     height="14px"
+                    loading="lazy"
                   />
                   <img
                     src="../../assets/star.svg"
                     alt=""
                     width="14px"
                     height="14px"
+                    loading="lazy"
                   />
                   <img
                     src="../../assets/star.svg"
                     alt=""
                     width="14px"
                     height="14px"
+                    loading="lazy"
                   />
                   <img
                     src="../../assets/star.svg"
                     alt=""
                     width="14px"
                     height="14px"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -476,12 +500,14 @@ export default function Home() {
               <img
                 src="../../assets/quote1.svg"
                 alt=""
+                loading="lazy"
                 className="absolute left-[0px] top-[0px]"
               />
               <img
                 src="../../assets/quote2.svg"
                 alt=""
                 className="absolute right-[0px] bottom-[10px]"
+                loading="lazy"
               />
               <blockquote className="text-[#525252] text-[.75rem] w-[230px] text-left">
                 Just what i needed for my restaurant.{" "}
@@ -493,7 +519,7 @@ export default function Home() {
 
           <div className="w-[256px] h-[200px] bg-white p-[19px] rounded-[25px] ml-[40px]">
             <div className="flex gap-[]">
-              <img src="../../assets/photo3.svg" alt="" />
+              <img src="../../assets/photo3.svg" alt="" loading="lazy" />
               <div className="text-left ml-[10px]">
                 <h2 className="text-[#000] text-[.75rem] font-bold">
                   Manager - Cameroon
@@ -502,11 +528,11 @@ export default function Home() {
                   Founder - Bruxells
                 </p>
                 <div className="flex items-center justify-start">
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -515,11 +541,13 @@ export default function Home() {
                 src="../../assets/quote1.svg"
                 alt=""
                 className="absolute left-[0px] top-[0px]"
+                loading="lazy"
               />
               <img
                 src="../../assets/quote2.svg"
                 alt=""
                 className="absolute right-[0px] bottom-[10px]"
+                loading="lazy"
               />
               <blockquote className="text-[#525252] text-[.6875rem] w-[200px] text-left">
                 Just what i needed for my restaurant.{" "}
@@ -531,7 +559,12 @@ export default function Home() {
 
           <div className="w-[256px] h-[200px] bg-white p-[19px] rounded-[25px] ml-[20px]">
             <div className="flex gap-[]">
-              <img src="../../assets/photo4.svg" alt="" />
+              <img
+                src="../../assets/photo4.svg"
+                alt=""
+                loading="lazy"
+                loading="lazy"
+              />
               <div className="text-left ml-[10px]">
                 <h2 className="text-[#000] text-[.75rem] font-bold">
                   Chantal Chicken
@@ -540,11 +573,11 @@ export default function Home() {
                   Manager - Cameroon
                 </p>
                 <div className="flex items-center justify-start">
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -553,11 +586,13 @@ export default function Home() {
                 src="../../assets/quote1.svg"
                 alt=""
                 className="absolute left-[0px] top-[0px]"
+                loading="lazy"
               />
               <img
                 src="../../assets/quote2.svg"
                 alt=""
                 className="absolute right-[0px] bottom-[10px]"
+                loading="lazy"
               />
               <blockquote className="text-[#525252] text-[.6875rem] w-[200px] text-left">
                 Just what i needed for my restaurant.{" "}
@@ -571,7 +606,7 @@ export default function Home() {
         <div className="flex items-center justify-center mt-[30px]">
           <div className="w-[280px] h-[200px] bg-white p-[19px] rounded-[25px] ml-[20px]">
             <div className="flex gap-[]">
-              <img src="../../assets/photo5.svg" alt="" />
+              <img src="../../assets/photo5.svg" alt="" loading="lazy" />
               <div className="text-left ml-[10px]">
                 <h2 className="text-[#000] text-[.75rem] font-bold">
                   Maddy foods
@@ -580,11 +615,11 @@ export default function Home() {
                   Manager & Founder - CM
                 </p>
                 <div className="flex items-center justify-start">
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -593,11 +628,13 @@ export default function Home() {
                 src="../../assets/quote1.svg"
                 alt=""
                 className="absolute left-[0px] top-[0px]"
+                loading="lazy"
               />
               <img
                 src="../../assets/quote2.svg"
                 alt=""
                 className="absolute right-[0px] bottom-[10px]"
+                loading="lazy"
               />
               <blockquote className="text-[#525252] text-[.6875rem] w-[200px] text-left">
                 Just what i needed for my restaurant.{" "}
@@ -609,7 +646,12 @@ export default function Home() {
 
           <div className="w-[280px] h-[200px] bg-white p-[19px] rounded-[25px] ml-[20px]">
             <div className="flex gap-[]">
-              <img src="../../assets/photo6.svg" alt="" />
+              <img
+                src="../../assets/photo6.svg"
+                alt=""
+                loading="lazy"
+                loading="lazy"
+              />
               <div className="text-left ml-[10px]">
                 <h2 className="text-[#000] text-[.75rem] font-bold">
                   Boris cafe
@@ -618,11 +660,11 @@ export default function Home() {
                   Co-founder - Canada
                 </p>
                 <div className="flex items-center justify-start">
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -631,11 +673,15 @@ export default function Home() {
                 src="../../assets/quote1.svg"
                 alt=""
                 className="absolute left-[0px] top-[0px]"
+                loading="lazy"
+                loading="lazy"
               />
               <img
                 src="../../assets/quote2.svg"
                 alt=""
                 className="absolute right-[0px] bottom-[10px]"
+                loading="lazy"
+                loading="lazy"
               />
               <blockquote className="text-[#525252] text-[.6875rem] w-[200px] text-left">
                 Just what i needed for my restaurant.{" "}
@@ -647,7 +693,7 @@ export default function Home() {
 
           <div className="w-[280px] h-[200px] bg-white p-[19px] rounded-[25px] ml-[20px]">
             <div className="flex gap-[]">
-              <img src="../../assets/photo7.svg" alt="" />
+              <img src="../../assets/photo7.svg" alt="" loading="lazy" />
               <div className="text-left ml-[10px]">
                 <h2 className="text-[#000] text-[.75rem] font-bold">
                   Orphee Breakfast
@@ -656,11 +702,11 @@ export default function Home() {
                   Founder - Ghana
                 </p>
                 <div className="flex items-center justify-start">
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
-                  <img src="../../assets/star.svg" alt="" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
+                  <img src="../../assets/star.svg" alt="" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -669,11 +715,13 @@ export default function Home() {
                 src="../../assets/quote1.svg"
                 alt=""
                 className="absolute left-[0px] top-[0px]"
+                loading="lazy"
               />
               <img
                 src="../../assets/quote2.svg"
                 alt=""
                 className="absolute right-[0px] bottom-[10px]"
+                loading="lazy"
               />
               <blockquote className="text-[#525252] text-[.6875rem] w-[200px] text-left">
                 Just what i needed for my restaurant.{" "}
@@ -687,11 +735,13 @@ export default function Home() {
           src="../../assets/circle.svg"
           alt=""
           className="absolute top-[153px] right-0 -z-10"
+          loading="lazy"
         />
         <img
           src="../../assets/A.svg"
           alt=""
           className="absolute bottom-0 left-0"
+          loading="lazy"
         />
       </section>
 
@@ -710,6 +760,7 @@ export default function Home() {
           src="../assets/Grid.svg"
           alt=""
           className="absolute top-[120px] right-0"
+          loading="lazy"
         />
         <div className="flex items-center justify-center gap-[32px]">
           {/* Monthly Plan Card */}
@@ -735,6 +786,7 @@ export default function Home() {
                   src="../assets/tick.png"
                   alt=""
                   className="w-[24px] h-[24px]"
+                  loading="lazy"
                 />
                 Full dashboard access
               </li>
@@ -743,6 +795,7 @@ export default function Home() {
                   src="../assets/tick.png"
                   alt=""
                   className="w-[24px] h-[24px]"
+                  loading="lazy"
                 />
                 Manage WhatsApp orders{" "}
                 <span className="p-[6.5px] rounded-[30px] text-[0.625rem] bg-[#6DAD05] ml-[-5px]">
@@ -754,6 +807,7 @@ export default function Home() {
                   src="../assets/tick.png"
                   alt=""
                   className="w-[24px] h-[24px]"
+                  loading="lazy"
                 />
                 Unlimited meals creation
               </li>
@@ -762,6 +816,7 @@ export default function Home() {
                   src="../assets/tick.png"
                   alt=""
                   className="w-[24px] h-[24px]"
+                  loading="lazy"
                 />
                 QR Code + URL
               </li>
@@ -770,6 +825,7 @@ export default function Home() {
                   src="../assets/tick.png"
                   alt=""
                   className="w-[24px] h-[24px]"
+                  loading="lazy"
                 />
                 Free support{" "}
               </li>
@@ -789,6 +845,8 @@ export default function Home() {
                 "
                   alt=""
                   className="absolute top-[30%] left-0 z-10 opacity-[100%]"
+                  loading="lazy"
+                  loading="lazy"
                 />
                 $99.98
               </span>
@@ -799,6 +857,8 @@ export default function Home() {
                   src="../assets/tick.png"
                   alt=""
                   className="w-[24px] h-[24px]"
+                  loading="lazy"
+                  loading="lazy"
                 />
                 Full dashboard access
               </li>
@@ -807,6 +867,8 @@ export default function Home() {
                   src="../assets/tick.png"
                   alt=""
                   className="w-[24px] h-[24px]"
+                  loading="lazy"
+                  loading="lazy"
                 />
                 Manage WhatsApp orders{" "}
                 <span className="p-[6.5px] rounded-[30px] text-[0.625rem] bg-[#6DAD05] ml-[-5px]">
@@ -818,6 +880,8 @@ export default function Home() {
                   src="../assets/tick.png"
                   alt=""
                   className="w-[24px] h-[24px]"
+                  loading="lazy"
+                  loading="lazy"
                 />
                 Unlimited meals creation
               </li>
@@ -826,6 +890,8 @@ export default function Home() {
                   src="../assets/tick.png"
                   alt=""
                   className="w-[24px] h-[24px]"
+                  loading="lazy"
+                  loading="lazy"
                 />
                 QR Code + URL
               </li>
@@ -834,6 +900,8 @@ export default function Home() {
                   src="../assets/tick.png"
                   alt=""
                   className="w-[24px] h-[24px]"
+                  loading="lazy"
+                  loading="lazy"
                 />
                 Free support{" "}
               </li>
@@ -855,6 +923,7 @@ export default function Home() {
                 "
                   alt=""
                   className="absolute top-[30%] left-0 z-10 opacity-[100%]"
+                  loading="lazy"
                 />
                 $349.98
               </span>
@@ -865,6 +934,7 @@ export default function Home() {
                   src="../assets/tick.png"
                   alt=""
                   className="w-[24px] h-[24px]"
+                  loading="lazy"
                 />
                 Full dashboard access
               </li>
@@ -873,6 +943,7 @@ export default function Home() {
                   src="../assets/tick.png"
                   alt=""
                   className="w-[24px] h-[24px]"
+                  loading="lazy"
                 />
                 Manage WhatsApp orders{" "}
                 <span className="p-[6.5px] rounded-[30px] text-[0.625rem] bg-[#8F2692] ml-[-5px] text-white">
@@ -884,6 +955,7 @@ export default function Home() {
                   src="../assets/tick.png"
                   alt=""
                   className="w-[24px] h-[24px]"
+                  loading="lazy"
                 />
                 Unlimited meals creation
               </li>
@@ -892,6 +964,7 @@ export default function Home() {
                   src="../assets/tick.png"
                   alt=""
                   className="w-[24px] h-[24px]"
+                  loading="lazy"
                 />
                 QR Code + URL
               </li>
@@ -900,6 +973,7 @@ export default function Home() {
                   src="../assets/tick.png"
                   alt=""
                   className="w-[24px] h-[24px]"
+                  loading="lazy"
                 />
                 Free support{" "}
               </li>
@@ -914,7 +988,12 @@ export default function Home() {
         id="contact"
       >
         <div className="max-w-[470px]">
-          <img src="../assets/Grid.svg" alt="" className="mb-[23px]" />
+          <img
+            src="../assets/Grid.svg"
+            alt=""
+            className="mb-[23px]"
+            loading="lazy"
+          />
           <h1 className="text-[#525252] text-[2.8125rem] font-bold mb-[36px] w-[360px]">
             Any question? Reach out to us.
           </h1>
@@ -931,6 +1010,8 @@ export default function Home() {
                 src="../assets/ProfileNotColor.png"
                 alt=""
                 className="w-[24px] h-[25px]"
+                loading="lazy"
+                loading="lazy"
               />
               <input
                 type="text"
@@ -944,6 +1025,8 @@ export default function Home() {
                 src="../assets/Message.png"
                 alt=""
                 className="w-[24px] h-[25px]"
+                loading="lazy"
+                loading="lazy"
               />
               <input
                 type="text"
@@ -959,6 +1042,8 @@ export default function Home() {
                 src="../assets/Edit.png"
                 alt=""
                 className="w-[24px] h-[25px]"
+                loading="lazy"
+                loading="lazy"
               />
               <select
                 id="country"
@@ -985,6 +1070,8 @@ export default function Home() {
                 src="../assets/Call.png"
                 alt=""
                 className="w-[24px] h-[25px]"
+                loading="lazy"
+                loading="lazy"
               />
               <input
                 type="text"
@@ -1007,6 +1094,8 @@ export default function Home() {
               src="../assets/Send.png"
               alt=""
               className="w-[34px] h-[34px]"
+              loading="lazy"
+              loading="lazy"
             />
           </button>
         </form>
@@ -1014,6 +1103,8 @@ export default function Home() {
           src="../assets/Ellipse2.svg"
           alt=""
           className="absolute left-0 top-[80px]"
+          loading="lazy"
+          loading="lazy"
         />
       </section>
 
@@ -1021,7 +1112,13 @@ export default function Home() {
       <footer className=" bg-[#313131]">
         <div className="flex items-start px-[161px] pt-[74px]">
           <div className="mr-[45px]">
-            <img src="../assets/LogoLight.svg" alt="" className="mb-[13px]" />
+            <img
+              src="../assets/LogoLight.svg"
+              alt=""
+              className="mb-[13px]"
+              loading="lazy"
+              loading="lazy"
+            />
             <p className="text-white w-[306px]">
               Get a better digitalized menu for your restaurant. Better display,
               clean design, suitable for all types of restaurants.
@@ -1059,6 +1156,7 @@ export default function Home() {
                   src="../assets/Message2.svg"
                   alt=""
                   className="w-[24px] h-[25px] mr-[17px]"
+                  loading="lazy"
                 />
                 <input
                   type="text"
@@ -1071,6 +1169,7 @@ export default function Home() {
                     src="../assets/Send.png"
                     alt=""
                     className="w-[16px] h-[16px]"
+                    loading="lazy"
                   />
                 </button>
               </div>
@@ -1085,6 +1184,7 @@ export default function Home() {
                   src="../assets/Message2.svg"
                   alt=""
                   className="w-[20px] h-[20px] mr-[11px]"
+                  loading="lazy"
                 />{" "}
                 <p className="">support@foodiesto.com</p>
               </div>
@@ -1094,6 +1194,7 @@ export default function Home() {
                   src="../assets/Call2.svg"
                   alt=""
                   className="w-[20px] h-[20px] mr-[11px]"
+                  loading="lazy"
                 />{" "}
                 <p className="">+44 359 298 9984</p>
               </div>
@@ -1106,9 +1207,24 @@ export default function Home() {
           </h2>
           <div className="flex items-center">
             <p className="text-[#C4C4C4] font-bold mr-[51px]">We accept</p>
-            <img src="../assets/Paypal.svg" alt="" className="mr-[19px]" />
-            <img src="../assets/masterCard.svg" alt="" className="mr-[19px]" />
-            <img src="../assets/visa.svg" alt="" className="mr-[19px]" />
+            <img
+              src="../assets/Paypal.svg"
+              alt=""
+              className="mr-[19px]"
+              loading="lazy"
+            />
+            <img
+              src="../assets/masterCard.svg"
+              alt=""
+              className="mr-[19px]"
+              loading="lazy"
+            />
+            <img
+              src="../assets/visa.svg"
+              alt=""
+              className="mr-[19px]"
+              loading="lazy"
+            />
           </div>
         </div>
       </footer>
